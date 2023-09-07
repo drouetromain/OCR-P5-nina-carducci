@@ -42,6 +42,10 @@ body {
 	width: 20px;
 }
 
+img {
+	object-fit: cover;
+}
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -59,6 +63,11 @@ body {
 	bottom: 0;
 	left: 0;
 	z-index: -1;
+}
+
+.about-pic{
+	width: 560px;
+	height: 560px;
 }
 
 .picture {
@@ -102,9 +111,16 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #1C6474;
 	border-radius:0 ;
 }
+
+/* Highlight des filtres */
+.active-tag{
+	background-color: #1C6474 !important;
+	color: #fff !important;
+}
+
 .nav-pills .nav-link {
 	color: #000
 }
