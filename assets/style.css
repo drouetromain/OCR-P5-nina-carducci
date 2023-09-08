@@ -1,7 +1,12 @@
-body {
+/*body {
 	max-width: 1920px;
 	margin: auto;
+}*/
+
+html {
+	width: fit-content;
 }
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
@@ -40,6 +45,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 img {
@@ -65,9 +71,28 @@ img {
 	z-index: -1;
 }
 
+.slider-pic{
+	width: 1920px;
+	height: 888px;
+	max-width: 100%;
+}
+
 .about-pic{
 	width: 560px;
 	height: 560px;
+	max-width: 100%;
+}
+
+.quote-pic{
+	width: 420px;
+	height: 420px;
+	max-width: 100%;
+}
+
+.carrousel-pic{
+	max-width: 100%;
+    width: 866px;
+    height: 700px;
 }
 
 .picture {
@@ -76,10 +101,11 @@ img {
 	z-index: 0;
 }
 
-.picture img {
+/*.picture img {
 	width: 100%;
 
-}
+}*/
+
 #about-me {
 	flex: 2
 }
@@ -102,6 +128,19 @@ img {
 #gallery {
 	/*	min-height: 100vh; */
 }
+
+.container-portfolio {
+
+}
+
+.gallery-grid{
+	display: flex;
+	flex-wrap: wrap;
+	width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -128,6 +167,8 @@ img {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
+	height: 400px;
+    width: 400px;
 }
 .item-column::after{
 	content: "";
@@ -137,8 +178,8 @@ img {
 }
 .gallery-item {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 400px;
+	height: 400px;
 	object-fit: cover;
 	padding: .5em;
 }
@@ -367,6 +408,19 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+
+	.about-pic {
+		width: 270px;
+		height: 270px;
+	}
+
+	.slider-pic {
+		height: 250px;
+	}
+
+	.gallery-grid {
+		width: 100%;
 	}
 }
 
