@@ -28,8 +28,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
-	<script src="./assets/gallery.min.js" defer></script>
-	<script src="./assets/filters.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/scripts.min.js" defer></script>
 	<script type='application/ld+json'> 
 		{
 		  "@context": "http://www.schema.org",
@@ -107,7 +108,7 @@
 		</div>
 	</div>
 	<article id="about">
-		<div class="photo left">
+		<div class="picture left">
 			<img class="about-pic" src="./assets/images/nina-562x560px.webp" srcset="./assets/images/nina-270x270px.webp" media="(max-width: 400px)" alt="Photo portrait de Nina Carducci">
 		</div>
 		<div id="about-me">
@@ -117,71 +118,8 @@
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
 	</article>
-	<section>
+	<article id="gallery">
 		<h2 class="title">Portfolio</h2>
-		<div id="filters">
-			<div id="all" class="filter">Tout</div>
-			<div id="concert" class="filter">Concert</div>
-			<div id="business" class="filter">Entreprises</div>
-			<div id="wedding" class="filter">Mariages</div>
-			<div id="portrait" class="filter">Portrait</div>
-		</div>
-		<div id="gallery" class="gallery-grid">
-			<div class="card" data-id="1">
-				<div class="picture">
-				<img data-id="1" data-concert class="active gallery-img" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Foule en délire lors d'un concert"/>
-				</div>
-			</div>
-			<div class="card" data-id="2">
-				<div class="picture">
-					<img data-id="2" data-business class="active gallery-img" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Homme d'affaire serieux qui croise les bras"/>
-				</div>
-			</div>
-			<div class="card" data-id="3">
-				<div class="picture">
-					<img data-id="3" data-business class="active gallery-img" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Femme qui rit lors d'une réunion"/>
-				</div>
-			</div>
-			<div class="card" data-id="4">
-				<div class="picture">
-					<img data-id="4" data-wedding class="active gallery-img" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" srcset="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Jeune mariés qui se tiennent les mains par le bout des doigts"/>
-				</div>
-			</div>
-			<div class="card" data-id="5">
-				<div class="picture">
-					<img data-id="5" data-portrait class="active gallery-img" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Portrait d'un homme noir qui fronce les yeux"/>
-				</div>
-			</div>
-			<div class="card" data-id="6">
-				<div class="picture">
-					<img data-id="6" data-wedding class="active gallery-img" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Couple de mariés devant un palmier qui se regardent dans les yeux et rigolent"/>
-				</div>
-			</div>
-			<div class="card" data-id="7">
-				<div class="picture">
-					<img data-id="7" data-portrait class="active gallery-img" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Jeune femme à lunettes qui fait la pose et regarde au sol"/>
-				</div>
-			</div>
-			<div class="card" data-id="8">
-				<div class="picture">
-					<img data-id="8" data-concert class="active gallery-img" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Chanteur sur scène qui lève les bras"/>
-				</div>
-			</div>
-			<div class="card" data-id="9">
-				<div class="picture">
-					<img data-id="9" data-business class="active gallery-img" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Jeune femme devant son ordinateur portable qui rit"/>
-				</div>
-			</div>
-		</div>
-		<div id="lightbox">
-			<div class="content">
-				<button class="close">X</button>
-				<button class="previous">&lt;</button>
-				<img class="picture">
-				<button class="next">&gt;</button>
-			</div>
-		</div>
-		<!--
 		<div class="container-portfolio">
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Foule en délire lors d'un concert"/>
@@ -191,21 +129,19 @@
 				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Portrait d'un homme noir qui fronce les yeux"/>
 				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Couple de mariés devant un palmier qui se regardent dans les yeux et rigolent"/>
 				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Jeune femme à lunettes qui fait la pose et regarde au sol"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-400x400px.webp 400w, ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp 450w" alt="Jeune femme à lunettes qui fait la pose et regarde au sol"/>
+				<!-- <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-400x400px.webp 400w, ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp 450w" alt="Jeune femme à lunettes qui fait la pose et regarde au sol"/> -->
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Chanteur sur scène qui lève les bras"/>
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Jeune femme devant son ordinateur portable qui rit"/>
 			</div>
 		</div>
-		-->
-	
-		<aside class="quote">
-			<figure>
-				<blockquote lang="fr" class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-					<div class="quote__author">- Richard Avedon</div>
-				</blockquote>
-			</figure>
-		</aside>
-	</section>
+	</article>
+	<aside class="quote">
+		<figure>
+			<blockquote lang="fr" class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
+				<div class="quote__author">- Richard Avedon</div>
+			</blockquote>
+		</figure>
+	</aside>
 	<article id="services">
 		<h2 class="title">Mes services</h2>
 		<div class="container">
@@ -266,7 +202,7 @@
 					<input type="submit" value="Envoyer" aria-label="Envoyer"/>
 				</form>
 			</div>
-			<div class="photo right">
+			<div class="picture right">
 				<img class="quote-pic" src="./assets/images/camera-421x420.webp" alt="Appareil photo Reflex"/>
 			</div>
 		</div>
