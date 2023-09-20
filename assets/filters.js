@@ -8,7 +8,7 @@ let loadgalery = () =>{
 }
 
 window.onload = () => {
-    let filters = document.querySelectorAll("#filters div")
+    let filters = document.querySelectorAll("#filters button")
     for(let filter of filters){
         filter.addEventListener("click", function(){
             let tag = this.id;
@@ -16,7 +16,7 @@ window.onload = () => {
             for(let image of images){
                 image.classList.replace("active", "inactive");
                 if(tag in image.dataset || tag === "all"){
-                    image.classList.replace("inactive", "active")
+                    image.classList.replace("inactive", "active");
                 }
             }
             loadgalery();

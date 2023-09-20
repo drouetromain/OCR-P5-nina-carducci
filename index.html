@@ -13,9 +13,9 @@
 	<meta property="og:locale" content="fr_FR"/>
 	<meta property="og:type" content="Photograph" />
 	<meta property="og:url" content="https://nina-carducci.github.io/" />
-	<meta property="og:image" content="./assets/images/nina-562x560px.webp" />
+	<meta property="og:image" content="./assets/images/nina-562x560px.webp" alt="Photo portrait de Nina Carducci"/>
 	<!-- Meta Twitter Card-->
-	<meta name="twitter:card" content="./assets/images/nina-562x560px.webp" />
+	<meta name="twitter:card" content="./assets/images/nina-562x560px.webp" alt="Photo portrait de Nina Carducci"/>
 	<meta name="twitter:site" content="https://nina-carducci.github.io/" />
 	<meta name="twitter:title" content="Nina Carducci - Photographe indépendante Bordeaux" />
 	<meta name="twitter:description" content="Découvrez les travaux de la photographe indépendant à Bordeaux Nina Carducci" />
@@ -120,11 +120,11 @@
 	<section>
 		<h2 class="title">Portfolio</h2>
 		<div id="filters">
-			<div id="all" class="filter">Tout</div>
-			<div id="concert" class="filter">Concert</div>
-			<div id="business" class="filter">Entreprises</div>
-			<div id="wedding" class="filter">Mariages</div>
-			<div id="portrait" class="filter">Portrait</div>
+			<button id="all" class="filter">Tout</button>
+			<button id="concert" class="filter">Concert</button>
+			<button id="business" class="filter">Entreprises</button>
+			<button id="wedding" class="filter">Mariages</button>
+			<button id="portrait" class="filter">Portrait</button>
 		</div>
 		<div id="gallery" class="gallery-grid">
 			<div class="card" data-id="1">
@@ -176,27 +176,13 @@
 		<div id="lightbox">
 			<div class="content">
 				<button class="close">X</button>
-				<button class="previous">&lt;</button>
-				<img class="picture">
-				<button class="next">&gt;</button>
+				<div id="slider-box">
+					<button class="previous">&lt;</button>
+					<img class="picture">
+					<button class="next">&gt;</button>
+				</div>
 			</div>
 		</div>
-		<!--
-		<div class="container-portfolio">
-			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Foule en délire lors d'un concert"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Homme d'affaire serieux qui croise les bras"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Femme qui rit lors d'une réunion"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" srcset="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Jeune mariés qui se tiennent les mains par le bout des doigts"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Portrait d'un homme noir qui fronce les yeux"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Couple de mariés devant un palmier qui se regardent dans les yeux et rigolent"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Jeune femme à lunettes qui fait la pose et regarde au sol"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-400x400px.webp 400w, ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp 450w" alt="Jeune femme à lunettes qui fait la pose et regarde au sol"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Chanteur sur scène qui lève les bras"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-400x400px.webp" media="(max-width: 450px)" alt="Jeune femme devant son ordinateur portable qui rit"/>
-			</div>
-		</div>
-		-->
 	
 		<aside class="quote">
 			<figure>
@@ -273,15 +259,16 @@
 	</article>
 </main>
 <footer>
-	<span>Nina Carducci Photographe</span>
-	<div>
+	<div id="adress-box">
+		<span class="bold-title">Nina Carducci Photographe</span>
 		<span>68 avenue Alsace-Lorraine</span>
 		<span>33200</span>
-		<span>Bordeaux</span>,
+		<span>Bordeaux</span>
 		<span> Nouvelle-Aquitaine</span>
 		<span>Tél : +33 5 56 67 78 89</span>
 		<span>Horaires d'ouverture : du lundi au vendredi de 10 h à 19 h</span>
 	</div>
+	<div id="legal-mentions"><a href="#">Mentions Légales</a></div>
 </footer>
 </body>
 </html>
