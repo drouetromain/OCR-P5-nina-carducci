@@ -1,8 +1,4 @@
-body {
-	max-width: 1920px;
-}
-
-html {
+html{
 	width: fit-content;
 	margin: auto;
 }
@@ -121,8 +117,8 @@ img {
 	font-size: 22px;
 }
 
-#about-me p{
-	font-size: 18px;
+.about-me__description{
+	font-size: 20px;
 }
 
 #gallery .inactive{
@@ -149,6 +145,7 @@ img {
 
 #lightbox.show{
 	display: flex;
+	z-index: 99;
 }
 
 #lightbox .content {
@@ -204,8 +201,8 @@ button {
 	border-style : none;
 }
 .filter.active, .filter:active, .filter:focus{
-	background-color: #1c6474;
-	color: #fff;
+	background-color: #BEB45A;
+	color: #000;
 	cursor: pointer;
 }
 
@@ -339,6 +336,7 @@ footer {
 	display:flex;
 	flex-direction: column;
 	padding: 20px 10px 10px 20px;
+	font-size: 20px;
 }
 
 #legal-mentions {
@@ -350,6 +348,7 @@ footer {
 #legal-mentions a {
 	color: #000;
     text-decoration: none;
+	font-size: 20px;
 }
 
 @media all and (max-width: 1180px) {
@@ -480,6 +479,11 @@ footer {
 	.gallery-grid {
 		width: 100%;
 		justify-content: center;
+	}
+
+	.gallery-img {
+		width: 350px;
+		height: 348px;
 	}
 
 	#lightbox .content {

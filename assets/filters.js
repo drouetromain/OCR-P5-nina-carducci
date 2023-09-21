@@ -11,6 +11,11 @@ window.onload = () => {
     let filters = document.querySelectorAll("#filters button")
     for(let filter of filters){
         filter.addEventListener("click", function(){
+            /* Suppression de toutes les classes actives du filtre */
+            const elements = document.querySelectorAll('.filter.active'); 
+            elements.forEach((element) => { element.classList.remove('active'); });
+            /* Dans this.classList, ajouter la class active */
+            this.classList.add("active");
             let tag = this.id;
             let images = document.querySelectorAll("#gallery img");
             for(let image of images){
@@ -22,7 +27,5 @@ window.onload = () => {
             loadgalery();
         });
     }
-    /* Evenement au click sur l'image*/
-    //console.log(lightBox);
     loadgalery();
 }
